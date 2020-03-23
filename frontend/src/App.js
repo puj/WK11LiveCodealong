@@ -5,8 +5,8 @@ import { MessageInput } from 'components/MessageInput.js'
 export const App = () => {
   return (
     <div>
-     {/* <MessageList/> */}
-    {/* <MessageInput/> */}
+    <MessageInput/>
+     <MessageList/>
 </div>
   )
 }

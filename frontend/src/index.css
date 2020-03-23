@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.form-text{
+  margin:8px;
+  font-size:26px; 
+}
+
+.form-button{
+  margin:8px;
+  font-size:26px;
+
+}
+
+.message{
+  margin:8px;
+  font-size:26px; 
+}
+
+.message-time{
+  margin:8px;
+  font-size:18px;
+  color:#6e6e6e;
+}

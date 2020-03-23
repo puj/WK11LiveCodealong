@@ -26,8 +26,16 @@ export const MessageInput = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" onChange={event => setMessage(event.target.value)}></input>
-            <input type="submit"></input>
+            <input 
+                type="text" 
+                onChange={event => setMessage(event.target.value)}
+                className="form-text">
+             </input>
+            <input 
+                type="submit"
+                className="form-button"
+                value="Add Message">
+            </input>
         </form>
     )
 }

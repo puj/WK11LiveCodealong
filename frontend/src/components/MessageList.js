@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from "react"
+import moment from 'moment';
 
 export const MessageList = () => {
     // It's good to put your URLs in constants
@@ -15,7 +16,7 @@ export const MessageList = () => {
             })
             .then(data => {
                 // Set the state based on the response
-                setMessages(data);
+                setMessages(data.reverse());
             });
     }, []);
 
@@ -25,7 +26,12 @@ export const MessageList = () => {
             {
                 // Add a section for each message returned by the backend
                 messages.map(message => (
-                    <p key={message.created}>{message.text} </p>
+                    <p className="message" key={message.created}>
+                        {message.text}
+                        <span className="message-time">
+                            {moment(message.created).fromNow()}
+                        </span>
+                    </p>
                 ))
             }
         </div>
