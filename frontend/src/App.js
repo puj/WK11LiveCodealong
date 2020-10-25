@@ -1,12 +1,5 @@
-import React from 'react'
-import {MessageList} from './components/MessageList.js'
-import { MessageInput } from 'components/MessageInput.js'
+import React from "react";
 
 export const App = () => {
-  return (
-    <div>
-    <MessageInput/>
-     <MessageList/>
-</div>
-  )
-}
+  return <div></div>;
+};
